@@ -38,7 +38,7 @@ education:
 - name: Hong Kong University of Science and Technology (GZ)
   logo: /assets/images/badges/HKUST.png
   position: Ph.D. in Data Science and Analytics
-  date: Upcoming in Seq. 2026
+  date: Upcoming
 - name: Southern University of Science and Technology
   logo: /assets/images/badges/SUSTech.png
   position: B.S. in Data Science and Big Data Technology
@@ -57,5 +57,5 @@ awards:
   date: Apr. 2024
 
 service:
-- name: Volunteer of Christian Tianhe Church
-  date: Aug. 2024 - Present
+- name: Student Member, IEEE
+  date: Nov. 2024 - Present
