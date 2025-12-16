@@ -40,10 +40,10 @@ education:
   date: Sep. 2021 - Jul. 2025
 
 experience:
-- name: The Hong Kong University of Science and Technology (Guangzhou)
-  logo: /assets/images/badges/HKUST.png
-  position: Research Assistant, Intelligent Transportation Thrust
-  date: Sep. 2025 - Present
+- name: 2012 Laboratories, Huawei
+  logo: /assets/images/badges/Huawei.png
+  position: Research Intern, Spatio-Temporal Foundation Model
+  date: March. 2025 - Dec. 2025
 
 awards:
 - name: Top Ten Graduate Award, Shude Residential College, SUSTech
@@ -52,7 +52,7 @@ awards:
   date: Apr. 2024
 
 service:
-- name: Reviwer, AI4TS Workshop, AAAI 2026
-  date: Nov. 2026
-- name: Student Member, IEEE
-  date: Nov. 2024 - Present
+- name: Reviewer, ICASSP 2026
+  date: Dec. 2025
+- name: Reviewer, AI4TS Workshop, AAAI 2026
+  date: Nov. 2025
