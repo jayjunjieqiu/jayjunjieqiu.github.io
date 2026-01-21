@@ -21,5 +21,6 @@ authors:
   - Hao Xu
   - Yuxuan Liang#
 links:
-  Poster: https://neurips.cc/virtual/2025/poster/117035
+  Poster: https://neurips.cc/virtual/2025/loc/san-diego/poster/117035
+  GitHub: https://github.com/CityMind-Lab/FactoST
 ---
