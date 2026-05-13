@@ -30,10 +30,10 @@ portrait_url: /assets/images/photos/junjie.webp
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-# - name: Hong Kong University of Science and Technology (GZ)
-#   logo: /assets/images/badges/HKUST.webp
-#   position: Ph.D. in Data Science and Analytics
-#   date: Upcoming
+- name: Hong Kong University of Science and Technology (GZ)
+  logo: /assets/images/badges/HKUST.webp
+  position: Ph.D. in Intelligent Transportation
+  date: Sep. 2026 - Present
 - name: Southern University of Science and Technology
   logo: /assets/images/badges/SUSTech.webp
   position: B.S. in Data Science and Big Data Technology
