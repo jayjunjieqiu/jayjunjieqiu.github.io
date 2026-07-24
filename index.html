@@ -5,6 +5,10 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
+{% if site.data.profile.github %}
+    {% include widgets/github_contributions.html %}
+{% endif %}
+
 {% include widgets/debug_repo_name.html %}
 
 {% include widgets/debug_url.html %}
