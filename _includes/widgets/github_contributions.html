@@ -1,21 +1,23 @@
 <div class="row mt-3 justify-content-center">
     <div class="col-12 col-lg-10 col-xl-9">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
-                <div>
-                    <h6 class="mb-0">GitHub Contributions</h6>
-                </div>
-                <div class="github-contributions-chart mt-3">
+        <details class="github-contributions card border-0 shadow-sm bg-white">
+            <summary class="github-contributions-summary p-4">
+                <span>
+                    <span class="d-block h6 mb-1">GitHub Activity</span>
+                    <span class="d-block small text-muted">Contribution calendar · last 12 months</span>
+                </span>
+                <span class="github-contributions-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="github-contributions-panel px-4 pb-4">
+                <div class="github-contributions-chart">
                     <img
-                        src="https://ghchart.rshah.org/{{ site.data.profile.github }}"
+                        src="{{ '/assets/images/github-contributions.svg' | relative_url }}"
                         alt="GitHub contribution calendar for {{ site.data.profile.github }}"
                         loading="lazy"
                         decoding="async">
                 </div>
-                <p class="small text-muted mb-0 mt-2">
-                    Contribution activity is provided by GitHub and may be cached for up to a day.
-                </p>
+                <p class="small text-muted mb-0 mt-3">Updated daily from GitHub; the cached chart avoids a remote request on every page load.</p>
             </div>
-        </div>
+        </details>
     </div>
 </div>

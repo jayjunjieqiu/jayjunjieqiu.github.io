@@ -91,15 +91,85 @@ div.lazy {
 }
 
 .github-contributions-chart {
-    display: flex;
-    justify-content: center;
     max-width: 100%;
     overflow-x: auto;
+    padding-bottom: 0.25rem;
 }
 
 .github-contributions-chart img {
     display: block;
     width: 663px;
-    max-width: 100%;
+    max-width: none;
+    margin: 0 auto;
     height: auto;
+}
+
+.github-contributions-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none;
+}
+
+.github-contributions-summary::-webkit-details-marker {
+    display: none;
+}
+
+.github-contributions-summary::marker {
+    display: none;
+}
+
+.github-contributions-summary:hover {
+    background-color: rgba(0, 123, 255, 0.04);
+}
+
+.github-contributions-summary:focus-visible {
+    outline: 2px solid rgba(0, 123, 255, 0.55);
+    outline-offset: -2px;
+}
+
+.github-contributions-toggle {
+    width: 0.7rem;
+    height: 0.7rem;
+    flex: 0 0 auto;
+    margin-left: 1rem;
+    border-right: 2px solid #6c757d;
+    border-bottom: 2px solid #6c757d;
+    transform: rotate(45deg) translateY(-0.2rem);
+    transition: transform 0.25s ease;
+}
+
+.github-contributions[open] .github-contributions-toggle {
+    transform: rotate(225deg) translate(-0.15rem, -0.1rem);
+}
+
+.github-contributions-panel {
+    animation: github-contributions-expand 0.28s ease-out both;
+}
+
+@keyframes github-contributions-expand {
+    from {
+        opacity: 0;
+        transform: translateY(-0.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .github-contributions-chart img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .github-contributions-toggle,
+    .github-contributions-panel {
+        transition: none;
+        animation: none;
+    }
 }
