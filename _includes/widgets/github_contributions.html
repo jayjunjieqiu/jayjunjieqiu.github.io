@@ -20,7 +20,7 @@
                         decoding="async">
                 </div>
                 <div class="github-contributions-footer d-flex justify-content-between align-items-center mt-auto pt-3 small text-muted">
-                    <span>Updated daily from GitHub</span>
+                    <span>Updated {{ site.data.github_contributions.fetched_at | date: "%b %-d, %Y" }}</span>
                     <span class="github-contributions-legend" aria-label="Contribution intensity legend">
                         <span>Less</span>
                         <i class="github-legend-swatch github-legend-swatch-0"></i>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="google-scholar-meta mt-auto pt-4 d-flex align-items-end">
-                    <span class="small text-muted">{{ site.data.google_scholar.articles }} publications · updated {{ site.data.google_scholar.fetched_at | date: "%b %-d, %Y" }}</span>
+                    <span class="small text-muted">{{ site.data.google_scholar.articles }} publications · Updated {{ site.data.google_scholar.fetched_at | date: "%b %-d, %Y" }}</span>
                 </div>
             </div>
         </section>

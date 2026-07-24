@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import sys
 import time
+import json
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 
@@ -33,11 +35,14 @@ def fetch_chart(request: Request) -> str:
 
 
 def main() -> int:
-    if len(sys.argv) != 3:
-        print("usage: update_github_contributions.py USERNAME OUTPUT", file=sys.stderr)
+    if len(sys.argv) != 4:
+        print(
+            "usage: update_github_contributions.py USERNAME OUTPUT METADATA_OUTPUT",
+            file=sys.stderr,
+        )
         return 2
 
-    username, output_name = sys.argv[1:]
+    username, output_name, metadata_name = sys.argv[1:]
     request = Request(
         f"https://ghchart.rshah.org/{username}",
         headers={"User-Agent": "jayjunjieqiu.github.io contribution updater"},
@@ -51,6 +56,16 @@ def main() -> int:
     output = Path(output_name)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(chart, encoding="utf-8")
+    metadata = Path(metadata_name)
+    metadata.parent.mkdir(parents=True, exist_ok=True)
+    metadata.write_text(
+        json.dumps(
+            {"fetched_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")},
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     print(f"Wrote themed contribution chart to {output}")
     return 0
 
