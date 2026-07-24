@@ -1,23 +1,76 @@
-<div class="row mt-3 justify-content-center">
-    <div class="col-12 col-lg-10 col-xl-9">
-        <details class="github-contributions card border-0 shadow-sm bg-white">
-            <summary class="github-contributions-summary p-4">
-                <span>
-                    <span class="d-block h6 mb-1">GitHub Activity</span>
-                    <span class="d-block small text-muted">Contribution calendar · last 12 months</span>
-                </span>
-                <span class="github-contributions-toggle" aria-hidden="true"></span>
-            </summary>
-            <div class="github-contributions-panel px-4 pb-4">
-                <div class="github-contributions-chart">
+<div class="row mt-3 align-items-stretch github-scholar-grid">
+    <div class="col-12 col-lg-7 mb-3 mb-lg-0 d-flex">
+        <section class="github-contributions card border-0 shadow-sm bg-white w-100">
+            <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between">
+                    <div>
+                        <p class="github-card-kicker mb-1">Open source</p>
+                        <h5 class="mb-1">GitHub Activity</h5>
+                        <p class="small text-muted mb-0">Contribution calendar · last 12 months</p>
+                    </div>
+                    <span class="github-card-mark github-card-mark-github" aria-hidden="true"><i class="fab fa-github"></i></span>
+                </div>
+                <div class="github-contributions-chart mt-4">
                     <img
                         src="{{ '/assets/images/github-contributions.svg' | relative_url }}"
                         alt="GitHub contribution calendar for {{ site.data.profile.github }}"
-                        loading="lazy"
+                        width="663"
+                        height="104"
+                        loading="eager"
+                        fetchpriority="high"
                         decoding="async">
                 </div>
-                <p class="small text-muted mb-0 mt-3">Updated daily from GitHub; the cached chart avoids a remote request on every page load.</p>
+                <div class="github-contributions-footer d-flex justify-content-between align-items-center mt-auto pt-3 small text-muted">
+                    <span>Updated daily from GitHub</span>
+                    <span class="github-contributions-legend" aria-label="Contribution intensity legend">
+                        <span>Less</span>
+                        <i class="github-legend-swatch github-legend-swatch-0"></i>
+                        <i class="github-legend-swatch github-legend-swatch-1"></i>
+                        <i class="github-legend-swatch github-legend-swatch-2"></i>
+                        <i class="github-legend-swatch github-legend-swatch-3"></i>
+                        <i class="github-legend-swatch github-legend-swatch-4"></i>
+                        <span>More</span>
+                    </span>
+                </div>
             </div>
-        </details>
+        </section>
+    </div>
+    <div class="col-12 col-lg-5 d-flex">
+        <section class="google-scholar card border-0 shadow-sm bg-white w-100">
+            <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-start justify-content-between">
+                    <div>
+                        <p class="github-card-kicker mb-1">Research profile</p>
+                        <h5 class="mb-1">Google Scholar</h5>
+                        <p class="small text-muted mb-0">Impact at a glance</p>
+                    </div>
+                    <span class="github-card-mark github-card-mark-scholar" aria-hidden="true"><i class="ai ai-google-scholar"></i></span>
+                </div>
+                <div class="google-scholar-stats row no-gutters mt-4">
+                    <div class="col-4 pr-2">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.citations }}</span>
+                            <span class="google-scholar-stat-label">Citations</span>
+                        </div>
+                    </div>
+                    <div class="col-4 px-1">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.h_index }}</span>
+                            <span class="google-scholar-stat-label">h-index</span>
+                        </div>
+                    </div>
+                    <div class="col-4 pl-2">
+                        <div class="google-scholar-stat">
+                            <span class="google-scholar-stat-value">{{ site.data.google_scholar.i10_index }}</span>
+                            <span class="google-scholar-stat-label">i10-index</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="google-scholar-meta mt-auto pt-4 d-flex justify-content-between align-items-end">
+                    <span class="small text-muted">{{ site.data.google_scholar.articles }} publications · updated {{ site.data.google_scholar.fetched_at | date: "%b %-d, %Y" }}</span>
+                    <a class="small no-break" target="_blank" rel="noopener" href="{{ site.data.google_scholar.profile_url }}">View profile <i class="fas fa-arrow-up-right-from-square ml-1"></i></a>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
