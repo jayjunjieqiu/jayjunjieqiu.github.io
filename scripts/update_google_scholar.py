@@ -7,10 +7,16 @@ import argparse
 import html
 import json
 import re
+import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
+
+
+class ScholarBlocked(RuntimeError):
+    """Google Scholar rejected the automated request."""
 
 
 def text_from_html(fragment: str) -> str:
@@ -28,6 +34,10 @@ def fetch_profile(request: Request) -> str:
             last_error = error
             if attempt < 2:
                 time.sleep(2)
+    if isinstance(last_error, HTTPError) and last_error.code == 403:
+        raise ScholarBlocked(
+            "Google Scholar returned HTTP 403; keeping the previous cached metrics"
+        )
     raise RuntimeError(f"Could not fetch Google Scholar profile: {last_error}")
 
 
@@ -84,9 +94,13 @@ def main() -> int:
         f"https://scholar.google.com/citations?hl=en&user={args.user}",
         headers={"User-Agent": "jayjunjieqiu.github.io Scholar updater"},
     )
-    profile_html = fetch_profile(request)
+    try:
+        profile_html = fetch_profile(request)
+        payload = parse_profile(profile_html, args.user)
+    except ScholarBlocked as error:
+        print(f"::warning::{error}", file=sys.stderr)
+        return 0
 
-    payload = parse_profile(profile_html, args.user)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
