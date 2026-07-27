@@ -99,7 +99,7 @@ div.lazy {
 
 .github-contributions-chart img {
     display: block;
-    width: 663px;
+    width: auto;
     max-width: none;
     margin: 0 auto;
     height: auto;
