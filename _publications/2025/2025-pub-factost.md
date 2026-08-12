@@ -1,7 +1,7 @@
 ---
 title:          "Learning to Factorize Spatio-Temporal Foundation Models"
 date:           2025-09-19 01:54:00 +0800
-selected:       true
+selected:       false
 pub:            "Neural Information Processing Systems (NeurIPS)"
 pub_date:       "2025"
 # pub_pre:        "Submitted to "

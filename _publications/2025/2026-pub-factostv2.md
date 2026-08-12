@@ -1,7 +1,7 @@
 ---
 title:          "Learning to Factorize and Adapt: A Versatile Approach Toward Universal Spatio-Temporal Foundation Models"
 date:           2026-01-12 13:00:00 +0800
-selected:       true
+selected:       false
 # pub:            "Neural Information Processing Systems (NeurIPS)"
 # pub_date:       "2025"
 pub_pre:        "Submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)."
