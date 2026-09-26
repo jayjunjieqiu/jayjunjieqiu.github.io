@@ -2,6 +2,18 @@
 title:          "Learning to Factorize Spatio-Temporal Foundation Models"
 date:           2025-09-19 01:54:00 +0800
 selected:       false
+short_name:     FactoST
+venue_label:    NeurIPS 2025
+spotlight:      true
+paper_url:      https://proceedings.neurips.cc/paper_files/paper/2025/hash/7fa2a1f2122a4dd76e6b9ac518cfce14-Abstract-Conference.html
+cover_height:   426
+visual_caption: Pretrain temporal patterns. Adapt across domains.
+summary: >-
+  Separating transferable temporal knowledge from domain-specific dependencies
+  to make foundation models easier to adapt.
+contribution: >-
+  I evaluated cross-domain transfer through zero-shot and few-shot forecasting,
+  assessing how pretrained temporal representations adapt to new datasets.
 pub:            "Neural Information Processing Systems (NeurIPS)"
 pub_date:       "2025"
 # pub_pre:        "Submitted to "
@@ -16,6 +28,7 @@ authors:
   - Junjie Qiu
   - Yangyu Wu
   - Xingchen Zou
+  - Zhongwen Rao
   - Bin Yang
   - Chenjuan Guo
   - Hao Xu

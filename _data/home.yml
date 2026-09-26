@@ -1,0 +1,75 @@
+intro: >-
+  I’m a first-year Ph.D. student at HKUST (Guangzhou), advised by
+  <a href="https://yuxuanliang.com/">Prof. Yuxuan Liang</a>.
+  I study <strong>temporal modeling for physical AI</strong>.
+perspective: >-
+  My goal is to develop long-horizon memory for agents in dynamic environments,
+  including embodied systems. My work spans temporal pretraining, multimodal
+  video generation, and application-level memory for long-form storytelling.
+cv: "/assets/files/resume.pdf"
+
+research_interests: >-
+  I’m interested in what an agent should retain from past observations,
+  how that information should be updated as the environment changes,
+  and how it can help with later predictions and decisions.
+
+experience:
+  - organisation: ByFusion · LuckyShort
+    logo: /assets/images/badges/LuckyShort.webp
+    logo_alt: LuckyShort logo
+    role: Architect
+    start: Mar. 2026
+    end: Sep. 2026
+    description: Led video-agent architecture for AI short-drama production, connecting long-form planning, narrative memory, controllable generation, and feedback on visual consistency.
+  - organisation: Hong Kong University of Science and Technology (GZ)
+    logo: /assets/images/badges/HKUST-GZ-horizontal.webp
+    logo_alt: HKUST Guangzhou logo
+    role: Research Assistant
+    start: Aug. 2025
+    end: Aug. 2026
+    description: Designed and pretrained temporal models for cross-domain forecasting, with variable-length context, quantile prediction, and efficient downstream adaptation.
+  - organisation: Huawei · 2012 Laboratories
+    logo: /assets/images/badges/Huawei-horizontal.webp
+    logo_alt: Huawei logo
+    role: Research Intern
+    start: Mar. 2025
+    end: Dec. 2025
+    description: Adapted pretrained temporal models to Ascend and evaluated them against reproduced baselines on telecommunications and power forecasting datasets.
+  - organisation: SUSTech · Center for Computational Science and Engineering
+    logo: /assets/images/badges/SUSTech.webp
+    logo_alt: SUSTech logo
+    role: Intern · High-Performance Computing
+    start: Mar. 2024
+    end: Jul. 2024
+    description: Benchmarked and commissioned HPC nodes, then used MPI profiling to optimize the interconnect topology of four newly installed nodes, reducing MPI communication time by approximately 20%.
+
+projects:
+  - title: Agentic Video Generation · Cross-Shot Consistency
+    date: "2026"
+    affiliation: ByFusion · LuckyShort
+    description: Built a reference-conditioned video workflow that checks character and scene continuity across shots, regenerating inconsistent outputs while retaining accepted frames.
+    details: >-
+      Shared reference assets and multimodal checks help identify character and scene drift.
+      Feedback is routed to regenerate the affected keyframes or shots. Creative direction
+      is managed across generation stages and refined using final-video feedback,
+      with model priors used to warm-start candidate search.
+  - title: ASC24 · LLM Inference Infrastructure
+    date: Apr. 2024
+    affiliation: Student Cluster Competition
+    description: Built a four-node, eight-GPU inference system with vLLM, Ray, and RDMA, dispatching requests to idle model replicas to balance workloads under fixed hardware constraints.
+    note: 10th overall among 300+ teams · First Prize & Group Competition Award
+
+education:
+  - school: Hong Kong University of Science and Technology (GZ)
+    logo: /assets/images/badges/HKUST.webp
+    logo_alt: HKUST logo
+    degree: Ph.D. in Intelligent Transportation
+    date: Sep. 2026 — Present
+    note: Advised by Prof. Yuxuan Liang
+  - school: Southern University of Science and Technology
+    logo: /assets/images/badges/SUSTech.webp
+    logo_alt: SUSTech logo
+    degree: B.S. in Data Science and Big Data Technology
+    date: Sep. 2021 — Jul. 2025
+    note: "GPA 3.89/4.00 · Rank 4/53 (top 10%)"
+    honor: Outstanding Graduate; Outstanding Undergraduate Thesis; Top Ten Graduate Award, Shude Residential College

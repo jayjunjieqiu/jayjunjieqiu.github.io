@@ -1,36 +1,81 @@
 ---
-layout: default
-title : Homepage
+layout: research
+title: Home
 navbar_title: Home
 ---
-{% include widgets/profile_card.html %}
+<section class="hero shell" id="about" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <h1 id="intro-title">Junjie Qiu</h1>
+    <div class="intro-prose"><p>{{ site.data.home.intro }}</p><p>{{ site.data.home.perspective }}</p></div>
+    <div class="profile-links" aria-label="Academic and professional profiles">
+      <a class="primary-link" href="{{ site.data.home.cv | relative_url }}" aria-label="View curriculum vitae (PDF)">View CV <span aria-hidden="true">↗</span></a>
+      <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">Scholar <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="mailto:{{ site.data.profile.email }}">Email <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <aside class="hero-aside" aria-label="Portrait">
+    <figure class="portrait">
+      <img src="{{ site.data.profile.portrait_url | relative_url }}" alt="Portrait of Junjie Qiu" width="400" height="400" fetchpriority="high">
+    </figure>
+  </aside>
+</section>
 
-{% if site.data.profile.github %}
-    {% include widgets/github_contributions.html %}
-{% endif %}
+<section class="focus-section" aria-labelledby="focus-title">
+  <div class="shell">
+    <div class="focus-heading"><h2 id="focus-title">Research interests</h2></div>
+    <p class="focus-prose">{{ site.data.home.research_interests }}</p>
+  </div>
+</section>
 
-{% include widgets/debug_repo_name.html %}
+<section class="section shell" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><h2 id="research-title">Publications</h2></div>
+  {% include research_publications.html %}
+</section>
 
-{% include widgets/debug_url.html %}
+<section class="experience-section" id="experience" aria-labelledby="experience-title">
+  <div class="shell section">
+    <div class="section-heading"><h2 id="experience-title">Experience</h2></div>
+    <div class="experience-list">
+      {% for job in site.data.home.experience %}
+      <article class="experience-row">
+        <div class="experience-meta">
+          <img class="experience-logo" src="{{ job.logo | relative_url }}" alt="{{ job.logo_alt }}" width="132" height="56" loading="lazy">
+          <p class="experience-date">{{ job.start }}{% if job.end != '' %}<span>— {{ job.end }}</span>{% endif %}</p>
+        </div>
+        <div><div class="experience-title"><h3>{{ job.organisation }}</h3><span>{{ job.role }}</span></div><p class="experience-description">{{ job.description }}</p>{% if job.note %}<p class="award-note">{{ job.note }}</p>{% endif %}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
+<section class="section projects-section shell" aria-labelledby="projects-title">
+  <div class="section-heading"><h2 id="projects-title">Projects</h2></div>
+  <div class="project-list">
+    {% for project in site.data.home.projects %}
+    <article class="project-row">
+      <p class="project-date">{{ project.date }}</p>
+      <div class="project-content">
+        <h3>{{ project.title }}</h3>
+        <p class="project-affiliation">{{ project.affiliation }}</p>
+        <p class="project-description">{{ project.description }}</p>
+        {% if project.note %}<p class="project-note">{{ project.note }}</p>{% endif %}
+        {% if project.details %}<details class="research-details"><summary>How it works <span aria-hidden="true">+</span></summary><div><p>{{ project.details }}</p></div></details>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
 
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
-
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
-
-{% include widgets/miscellaneous_card.html %}
+<section class="section education-section shell" aria-labelledby="education-title">
+  <div class="section-heading"><h2 id="education-title">Education</h2></div>
+  <div class="education-grid">
+    {% for item in site.data.home.education %}
+    <article>
+      <img class="education-logo" src="{{ item.logo | relative_url }}" alt="{{ item.logo_alt }}" width="48" height="56" loading="lazy">
+      <div><p class="education-date">{{ item.date }}</p><h3>{{ item.school }}</h3><p class="degree">{{ item.degree }}</p><p class="education-note">{{ item.note }}{% if item.honor %}<br>{{ item.honor }}{% endif %}</p></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

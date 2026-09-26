@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}Junjie Qiu</title>
+  <meta name="description" content="{{ page.description | default: 'Junjie Qiu — Ph.D. student at HKUST (Guangzhou), studying temporal modeling for physical AI and long-horizon memory in dynamic environments.' | escape }}">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta property="og:title" content="Junjie Qiu · Temporal modeling for physical AI">
+  <meta property="og:description" content="Research in temporal pretraining, memory, and physical AI. Building video agents and inference systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ '/assets/images/photos/junjie.webp' | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+  <script src="{{ '/assets/js/research.js' | relative_url }}" defer></script>
+  <meta name="msvalidate.01" content="3B8BC6BB01CC31DA3188D347D750F1B5">
+  <meta name="google-site-verification" content="mwdDGYvXUC-PCWqq4YLkVUX1eq1iZNKIQblG7lFVSS8">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Junjie Qiu, home">Junjie Qiu</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}#about" data-section="about">About</a>
+        <a href="{{ '/' | relative_url }}#research" data-section="research" {% if page.navbar_title == 'Publications' %}aria-current="page"{% endif %}>Research</a>
+        <a href="{{ '/' | relative_url }}#experience" data-section="experience">Experience</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">{{ content }}</main>
+  <dialog class="figure-dialog" aria-label="Enlarged research figure">
+    <button class="figure-close" type="button" aria-label="Close enlarged figure" autofocus>×</button>
+    <img class="figure-full" alt="">
+  </dialog>
+  <footer class="site-footer shell">
+    <span>© {{ 'now' | date: '%Y' }} Junjie Qiu</span>
+    <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+    <a href="#main">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
