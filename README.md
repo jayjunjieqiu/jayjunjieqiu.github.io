@@ -23,10 +23,10 @@ Open <http://127.0.0.1:4173>. To check a production build, run `bundle exec jeky
 - `_data/home.yml`: introduction, research interests, experience, projects, education, and CV path.
 - `_data/profile.yml`: name, portrait, email, and social profile identifiers.
 - `_publications/`: paper metadata, summaries, and individual contributions.
-- `assets/files/resume.pdf`: current downloadable CV; refresh from the résumé repository when it changes.
-- `_layouts/research.html`, `assets/css/research.css`, and `assets/js/research.js`: shared design and navigation.
+- `assets/files/resume.pdf` and `assets/files/resume_zh.pdf`: current English and Chinese downloadable CVs; refresh from the résumé repository when they change.
+- `_layouts/research.html`, `assets/css/research.css`, `assets/css/endfield.css`, and `assets/js/research.js`: shared design and navigation.
 
-The homepage and `/publications` share the same publication component. Personal contributions are visible beside each paper. Method and evaluation details, and the video-project workflow, use native HTML disclosure controls. All content is available without JavaScript. Typography uses local system fonts; portrait and paper figures use existing WebP assets.
+The homepage and `/publications` share the same publication component. Personal contributions are visible beside each paper. Method and evaluation details, and the video-project workflow, use native HTML disclosure controls. All content is available without JavaScript. The Endfield-inspired theme uses the reference template's contour texture and divider, official website Gilroy/Novecento fonts and color bar, yellow numbered headings, and native figure dialogs. Portrait and paper figures use existing WebP assets. Sources are recorded in `assets/endfield/SOURCES.md`.
 
 Paper figures open in a native dialog with keyboard and backdrop dismissal. Without JavaScript, the image links open directly.
 

@@ -6,9 +6,11 @@ navbar_title: Home
 <section class="hero shell" id="about" aria-labelledby="intro-title">
   <div class="hero-copy">
     <h1 id="intro-title">Junjie Qiu</h1>
+    <p class="research-tag">Temporal modeling / Multimodal / Physical AI</p>
     <div class="intro-prose"><p>{{ site.data.home.intro }}</p><p>{{ site.data.home.perspective }}</p></div>
     <div class="profile-links" aria-label="Academic and professional profiles">
-      <a class="primary-link" href="{{ site.data.home.cv | relative_url }}" aria-label="View curriculum vitae (PDF)">View CV <span aria-hidden="true">↗</span></a>
+      <a class="primary-link" href="{{ site.data.home.cv | relative_url }}" aria-label="View curriculum vitae (PDF)">CV · English <span aria-hidden="true">↗</span></a>
+      <a class="cv-language" href="{{ '/assets/files/resume_zh.pdf' | relative_url }}" aria-label="View Chinese curriculum vitae (PDF)">中文简历 <span aria-hidden="true">↗</span></a>
       <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">Scholar <span aria-hidden="true">↗</span></a>
       <a href="https://github.com/{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a>
       <a href="mailto:{{ site.data.profile.email }}">Email <span aria-hidden="true">↗</span></a>
@@ -23,19 +25,19 @@ navbar_title: Home
 
 <section class="focus-section" aria-labelledby="focus-title">
   <div class="shell">
-    <div class="focus-heading"><h2 id="focus-title">Research interests</h2></div>
+    <div class="focus-heading" data-index="01"><span class="section-index" aria-hidden="true">01</span><h2 id="focus-title">Research interests</h2></div>
     <p class="focus-prose">{{ site.data.home.research_interests }}</p>
   </div>
 </section>
 
 <section class="section shell" id="research" aria-labelledby="research-title">
-  <div class="section-heading"><h2 id="research-title">Publications</h2></div>
+  <div class="section-heading" data-index="02"><span class="section-index" aria-hidden="true">02</span><h2 id="research-title">Publications</h2></div>
   {% include research_publications.html %}
 </section>
 
 <section class="experience-section" id="experience" aria-labelledby="experience-title">
   <div class="shell section">
-    <div class="section-heading"><h2 id="experience-title">Experience</h2></div>
+    <div class="section-heading" data-index="03"><span class="section-index" aria-hidden="true">03</span><h2 id="experience-title">Experience</h2></div>
     <div class="experience-list">
       {% for job in site.data.home.experience %}
       <article class="experience-row">
@@ -50,8 +52,8 @@ navbar_title: Home
   </div>
 </section>
 
-<section class="section projects-section shell" aria-labelledby="projects-title">
-  <div class="section-heading"><h2 id="projects-title">Projects</h2></div>
+<section id="projects" class="section projects-section shell" aria-labelledby="projects-title">
+  <div class="section-heading" data-index="04"><span class="section-index" aria-hidden="true">04</span><h2 id="projects-title">Projects</h2></div>
   <div class="project-list">
     {% for project in site.data.home.projects %}
     <article class="project-row">
@@ -69,7 +71,7 @@ navbar_title: Home
 </section>
 
 <section class="section education-section shell" aria-labelledby="education-title">
-  <div class="section-heading"><h2 id="education-title">Education</h2></div>
+  <div class="section-heading" data-index="05"><span class="section-index" aria-hidden="true">05</span><h2 id="education-title">Education</h2></div>
   <div class="education-grid">
     {% for item in site.data.home.education %}
     <article>

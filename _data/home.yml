@@ -45,7 +45,7 @@ experience:
 
 projects:
   - title: Agentic Video Generation · Cross-Shot Consistency
-    date: "2026"
+    date: "Jul. – Sep. 2026"
     affiliation: ByFusion · LuckyShort
     description: Built a reference-conditioned video workflow that checks character and scene continuity across shots, regenerating inconsistent outputs while retaining accepted frames.
     details: >-
@@ -53,6 +53,14 @@ projects:
       Feedback is routed to regenerate the affected keyframes or shots. Creative direction
       is managed across generation stages and refined using final-video feedback,
       with model priors used to warm-start candidate search.
+  - title: Rare-Earth Pricing · Action-Conditioned Replanning
+    date: Jan. – Mar. 2026
+    affiliation: China Mobile Research Institute · China Rare Earth Group
+    description: Contributed to method design and experiments for long-horizon price modeling, conditioning forecasts on geopolitical and supply-chain observations and pricing actions to compare market scenarios and support replanning.
+  - title: Tencent Cloud · Behavior-Aware Resource Allocation
+    date: May – Aug. 2025
+    affiliation: Tencent Rhino-Bird Fund
+    description: Contributed to temporal-modeling method design for cloud resource allocation, using user behavior and historical allocation sequences as context for compute assignment decisions.
   - title: ASC24 · LLM Inference Infrastructure
     date: Apr. 2024
     affiliation: Student Cluster Competition
