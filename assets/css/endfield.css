@@ -3,7 +3,7 @@
 @font-face{font-family:Gilroy;src:url('../fonts/endfield/Gilroy-ExtraBold.ttf') format('truetype');font-weight:700 900;font-display:swap}
 @font-face{font-family:Novecento;src:url('../fonts/endfield/Novecento-Medium.ttf') format('opentype');font-weight:400 600;font-display:swap}
 @font-face{font-family:Novecento;src:url('../fonts/endfield/Novecento-Bold.ttf') format('opentype');font-weight:700 900;font-display:swap}
-:root{--paper:#fcfbf9;--ink:#111;--muted:#606266;--green:#111;--line:#d8d8d5;--wash:#f0f0ec;--accent:#111;--yellow:#fff500;--sans:Gilroy,Arial,'PingFang SC',sans-serif;--serif:Gilroy,Arial,sans-serif;--display:Novecento,Gilroy,Arial,sans-serif}
+:root{--paper:#fcfbf9;--ink:#111;--muted:#606266;--green:#111;--line:#d8d8d5;--wash:#f0f0ec;--accent:#111;--yellow:#fff500;--sans:Gilroy,'PingFang SC',Arial,'Microsoft YaHei',sans-serif;--serif:Gilroy,'PingFang SC',Arial,'Microsoft YaHei',sans-serif;--display:Novecento,Gilroy,'PingFang SC',Arial,'Microsoft YaHei',sans-serif}
 body{font-size:17px;background:var(--paper);background-image:linear-gradient(90deg,#fcfbf9 5%,#fcfbf9e6 32%,#fcfbf900 75%),url('../endfield/contour.webp');background-repeat:no-repeat;background-position:left 65px,right 65px;background-size:100% 600px,800px auto}
 ::selection{background:var(--yellow);color:var(--ink)}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:5px;background:var(--yellow);color:var(--ink)}
@@ -91,9 +91,12 @@ nav a[aria-current]::after{display:none}
 
 /* Bilingual typography and compact language control. */
 nav .language-switch{border:1px solid var(--ink);padding:5px 9px;white-space:nowrap}
-html[lang="zh-CN"]{--sans:Arial,"PingFang SC","Microsoft YaHei",sans-serif;--display:Gilroy,Arial,"PingFang SC","Microsoft YaHei",sans-serif}
 html[lang="zh-CN"] .hero h1{font-size:50px;letter-spacing:.06em}
 html[lang="zh-CN"] .intro-prose,html[lang="zh-CN"] .focus-prose{line-height:1.95}
 html[lang="zh-CN"] .paper-summary,html[lang="zh-CN"] .paper-contribution,html[lang="zh-CN"] .experience-description,html[lang="zh-CN"] .project-description{line-height:1.9}
-html[lang="zh-CN"] .paper-title{font-family:Gilroy,Arial,sans-serif}
 @media(max-width:520px){.header-inner{flex-wrap:wrap;padding-block:12px;gap:9px}.header-inner nav{margin-left:auto;gap:7px}nav .language-switch{padding:4px 6px}html[lang="zh-CN"] .hero h1{font-size:36px}}
+
+/* Compact vector mark traced from the official site asset. */
+.wordmark{display:inline-flex;align-items:center;justify-content:center;flex:none;width:42px;height:42px;background:transparent}
+.wordmark img{display:block;width:28px;height:31px}
+@media(max-width:700px){.wordmark{width:34px;height:34px}.wordmark img{width:23px;height:25px}}
