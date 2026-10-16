@@ -1,0 +1,91 @@
+{
+  "intro": "我是香港科技大学（广州）的一年级博士生，导师为 <a href=\"https://yuxuanliang.com/\">梁宇轩教授</a>，研究方向是<strong>面向物理人工智能的时序建模</strong>。",
+  "perspective": "我希望为动态环境中的智能体构建长时记忆，包括具身系统。已有工作涉及时序预训练、多模态视频生成，以及面向长篇叙事的应用层记忆。",
+  "cv": "/assets/files/resume.pdf",
+  "research_interests": "我关注智能体应当从过去的观测中保留什么、如何随环境变化更新这些信息，以及如何利用它们支持后续预测与决策。",
+  "experience": [
+    {
+      "organisation": "ByFusion · LuckyShort",
+      "logo": "/assets/images/badges/LuckyShort.webp",
+      "logo_alt": "LuckyShort 标志",
+      "role": "架构师",
+      "start": "2026.03",
+      "end": "2026.09",
+      "description": "负责 AI 短剧视频智能体的架构设计，串联长篇规划、叙事记忆、可控生成与视觉一致性反馈。"
+    },
+    {
+      "organisation": "香港科技大学（广州）",
+      "logo": "/assets/images/badges/HKUST-GZ-horizontal.webp",
+      "logo_alt": "香港科技大学（广州）标志",
+      "role": "研究助理",
+      "start": "2025.08",
+      "end": "2026.08",
+      "description": "设计并预训练面向跨领域预测的时序模型，支持可变长度上下文、分位数预测与高效下游适配。"
+    },
+    {
+      "organisation": "华为 · 2012 实验室",
+      "logo": "/assets/images/badges/Huawei-horizontal.webp",
+      "logo_alt": "华为标志",
+      "role": "研究实习生",
+      "start": "2025.03",
+      "end": "2025.12",
+      "description": "完成预训练时序模型在昇腾平台上的适配，并在通信与电力预测数据集上复现基线、评估模型表现。"
+    },
+    {
+      "organisation": "南方科技大学 · 科学与工程计算中心",
+      "logo": "/assets/images/badges/SUSTech.webp",
+      "logo_alt": "南方科技大学标志",
+      "role": "实习生 · 高性能计算",
+      "start": "2024.03",
+      "end": "2024.07",
+      "description": "开展超算节点基准测试与安装调试，通过 MPI 性能剖析优化四个新增节点的互连拓扑，将 MPI 通信时间降低约 20%。"
+    }
+  ],
+  "projects": [
+    {
+      "title": "视频生成智能体 · 跨镜头一致性",
+      "date": "2026.07 – 2026.09",
+      "affiliation": "ByFusion · LuckyShort",
+      "description": "构建参考资产驱动的视频生成流程，检查跨镜头的人物与场景连续性，保留已通过检查的帧，并定向重生成存在问题的内容。",
+      "details": "利用共享参考资产与多模态检查识别人物和场景漂移，将反馈传递至生成环节，修订相关关键帧或镜头。跨生成阶段统一管理创作方向，根据成片反馈进行调整，并以模型先验为候选搜索提供初始方向。"
+    },
+    {
+      "title": "稀土定价 · 动作条件化重规划",
+      "date": "2026.01 – 2026.03",
+      "affiliation": "中国移动研究院 · 中国稀土集团",
+      "description": "参与长时价格建模的方法设计与实验，以地缘政治、产业链观测和定价动作为条件预测市场变化，比较不同市场情景并支持重规划。"
+    },
+    {
+      "title": "腾讯云 · 用户行为驱动的资源分配",
+      "date": "2025.05 – 2025.08",
+      "affiliation": "腾讯犀牛鸟基金",
+      "description": "参与云资源分配的时序建模方法设计，以用户行为与历史资源分配序列为上下文，支持集群算力分配决策。"
+    },
+    {
+      "title": "ASC24 · 大模型推理基础设施",
+      "date": "2024.04",
+      "affiliation": "世界大学生超级计算机竞赛",
+      "description": "在四节点、八 GPU 集群上搭建融合 vLLM、Ray 与 RDMA 的推理系统，将请求动态分派至空闲模型副本，在固定硬件约束下均衡负载。",
+      "note": "300 余支队伍中总成绩第 10 名 · 一等奖及集群竞赛奖"
+    }
+  ],
+  "education": [
+    {
+      "school": "香港科技大学（广州）",
+      "logo": "/assets/images/badges/HKUST.webp",
+      "logo_alt": "香港科技大学标志",
+      "degree": "智能交通 · 博士在读",
+      "date": "2026.09 — 至今",
+      "note": "导师：梁宇轩教授"
+    },
+    {
+      "school": "南方科技大学",
+      "logo": "/assets/images/badges/SUSTech.webp",
+      "logo_alt": "南方科技大学标志",
+      "degree": "数据科学与大数据技术 · 理学学士",
+      "date": "2021.09 — 2025.07",
+      "note": "GPA 3.89/4.00 · 专业排名 4/53（前 10%）",
+      "honor": "优秀毕业生 · 优秀本科毕业论文 · 树德书院十佳毕业生"
+    }
+  ]
+}

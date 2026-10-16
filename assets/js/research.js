@@ -1,4 +1,11 @@
 (() => {
+  const languageSwitch = document.querySelector('[data-language-switch]');
+  if (languageSwitch) {
+    const syncLanguageLink = () => { languageSwitch.hash = window.location.hash; };
+    syncLanguageLink();
+    window.addEventListener('hashchange', syncLanguageLink);
+  }
+
   const sections = document.querySelectorAll('main > section[id]');
   const links = document.querySelectorAll('nav [data-section]');
 
