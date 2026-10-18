@@ -9,9 +9,8 @@ perspective: >-
 cv: "/assets/files/resume.pdf"
 
 research_interests: >-
-  I’m interested in what an agent should retain from past observations,
-  how that information should be updated as the environment changes,
-  and how it can help with later predictions and decisions.
+  I study how past experiences shape an agent’s future behavior and decisions
+  through memory, and how we can shape that influence.
 
 experience:
   - organisation: ByFusion · LuckyShort
