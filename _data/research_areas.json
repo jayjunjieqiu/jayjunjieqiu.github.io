@@ -26,7 +26,10 @@
     "figure_alt": "Zhou 等人 2017 年论文图 4A：光刺激诱导获胜后的小鼠社会等级变化，以及不同诱导获胜次数下新等级的保持情况。",
     "figure_caption": "第 0 天（蓝色区域），研究者通过光刺激帮助小鼠获胜。左图：横轴是天数，纵轴是比原来提升的名次；停止刺激后，红色组保持优势，橙色组回到原排名。右图：获胜 2–5 次的小鼠中，4/13 只保持新排名；获胜 6–20 次的 11 只全部保持。n 和柱内数字表示小鼠数量，*** 表示两组差异显著（p < 0.001）。",
     "figure_zoom": "放大查看原图 4A",
-    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！"
+    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！",
+    "video_date": "2026年10月18日",
+    "video_type": "视频",
+    "video_platform": "哔哩哔哩"
   },
   "en": {
     "technical_label": "Technical question",
@@ -55,6 +58,9 @@
     "figure_alt": "Figure 4A from Zhou et al. (2017): mouse rank changes after photostimulated wins, and rank maintenance after different numbers of induced wins.",
     "figure_caption": "On day 0 (blue band), photostimulation helped mice win. Left: days on the horizontal axis; places gained relative to the original rank on the vertical axis. After stimulation stopped, the red group retained its advantage; the orange group returned to its original rank. Right: 4 of 13 mice retained their new rank after 2–5 wins, compared with all 11 after 6–20 wins. The n labels and numbers inside the bars count mice; *** indicates a significant difference (p < 0.001).",
     "figure_zoom": "Enlarge original Figure 4A",
-    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！"
+    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！",
+    "video_date": "2026, October 18",
+    "video_type": "Video",
+    "video_platform": "Bilibili"
   }
 }
