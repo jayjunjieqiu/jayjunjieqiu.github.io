@@ -3,9 +3,10 @@ intro: >-
   <a href="https://yuxuanliang.com/">Prof. Yuxuan Liang</a>.
   I study <strong>memory modeling for physical AI</strong>.
 perspective: >-
-  My goal is to develop long-horizon memory for agents in dynamic environments,
-  including embodied systems. My work spans temporal pretraining, multimodal
-  video generation, and application-level memory for long-form storytelling.
+  I’m interested in how past experiences shape an agent’s future behavior and
+  decisions through memory, and how we can shape that influence. My work spans
+  temporal pretraining, multimodal video generation, and memory mechanisms for
+  long-form storytelling.
 cv: "/assets/files/resume.pdf"
 
 research_interests: >-
