@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% if page.lang %}<script src="{{ '/assets/js/language.js' | relative_url }}" data-locale="{{ lang }}" data-en-url="{{ page.en_path | default: '/' | relative_url }}" data-zh-url="{{ page.zh_path | default: '/zh/' | relative_url }}"></script>{% endif %}
-  <title>{% if page.title %}{{ page.title }} · {% endif %}Junjie Qiu</title>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ ui.name }}</title>
   <meta name="description" content="{{ page.description | default: ui.description | escape }}">
   <meta name="theme-color" content="#fcfbf9">
   <meta property="og:title" content="{% if page.research_area %}{{ page.title | escape }} · {{ ui.name }}{% else %}{{ ui.name }} · {{ ui.tag }}{% endif %}">
