@@ -22,10 +22,12 @@
       "AI 正在改变工作，也可能动摇许多人赖以获得收入、社会认可和身份感的方式。当一个人长期积累的技能不再被需要时，他该如何理解自己的价值，又如何找到继续行动的方向？这个问题的迫切性远不止于我个人，它关乎越来越多的人，也关乎整个人类如何面对这些变化。",
       "对我而言，这也是攻读 Doctor of Philosophy 的意义之一：认真追问一个重要的问题，不把寻找答案的方式限定在某个学科之内。我希望带着自己在人工智能、记忆与学习方面积累的知识，为它提供一个不同的视角。"
     ],
-    "reference_label": "启发这次思考的论文",
+    "reference_label": "参考材料",
     "figure_alt": "Zhou 等人 2017 年论文图 4A：光刺激诱导获胜后的小鼠社会等级变化，以及不同诱导获胜次数下新等级的保持情况。",
     "figure_caption": "第 0 天（蓝色区域），研究者通过光刺激帮助小鼠获胜。左图：横轴是天数，纵轴是比原来提升的名次；停止刺激后，红色组保持优势，橙色组回到原排名。右图：获胜 2–5 次的小鼠中，4/13 只保持新排名；获胜 6–20 次的 11 只全部保持。n 和柱内数字表示小鼠数量，*** 表示两组差异显著（p < 0.001）。",
-    "figure_zoom": "放大查看原图 4A"
+    "figure_zoom": "放大查看原图 4A",
+    "video_reference_intro": "这次思考也受到耿同学讲故事的视频启发：",
+    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！"
   },
   "en": {
     "technical_label": "Technical question",
@@ -50,9 +52,11 @@
       "AI is changing work and may unsettle the ways many people earn a living, gain recognition, and understand who they are. When skills built over many years are no longer needed, how can a person understand their own value and find a direction in which to act? The urgency of this question extends far beyond my own life. It concerns growing numbers of people, and how humanity will live through these changes.",
       "For me, this is also part of what pursuing a Doctor of Philosophy means: taking an important question seriously without restricting the search for answers to a single discipline. I hope to bring a different perspective through what I have learned about artificial intelligence, memory, and learning."
     ],
-    "reference_label": "The paper that prompted this reflection",
+    "reference_label": "References",
     "figure_alt": "Figure 4A from Zhou et al. (2017): mouse rank changes after photostimulated wins, and rank maintenance after different numbers of induced wins.",
     "figure_caption": "On day 0 (blue band), photostimulation helped mice win. Left: days on the horizontal axis; places gained relative to the original rank on the vertical axis. After stimulation stopped, the red group retained its advantage; the orange group returned to its original rank. Right: 4 of 13 mice retained their new rank after 2–5 wins, compared with all 11 after 6–20 wins. The n labels and numbers inside the bars count mice; *** indicates a significant difference (p < 0.001).",
-    "figure_zoom": "Enlarge original Figure 4A"
+    "figure_zoom": "Enlarge original Figure 4A",
+    "video_reference_intro": "This reflection was also inspired by a video by 耿同学讲故事 (in Chinese):",
+    "video_title": "成功才是成功之母？诺奖技术在小鼠脑中发现成功有技巧！"
   }
 }
