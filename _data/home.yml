@@ -1,7 +1,7 @@
 intro: >-
   I’m a first-year Ph.D. student at HKUST (Guangzhou), advised by
   <a href="https://yuxuanliang.com/">Prof. Yuxuan Liang</a>.
-  I study <strong>temporal modeling for physical AI</strong>.
+  I study <strong>memory modeling for physical AI</strong>.
 perspective: >-
   My goal is to develop long-horizon memory for agents in dynamic environments,
   including embodied systems. My work spans temporal pretraining, multimodal

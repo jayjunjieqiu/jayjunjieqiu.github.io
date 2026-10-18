@@ -1,0 +1,56 @@
+{
+  "zh": {
+    "technical_label": "技术问题",
+    "technical_title": "<span>面向物理 AI 的</span><span>记忆建模</span>",
+    "technical_text": "我关注智能体应当从过去的观测中保留什么、如何随环境变化更新这些信息，以及如何利用它们支持后续预测与决策。",
+    "technical_link": "相关研究与论文",
+    "lifelong_label": "社会问题",
+    "lifelong_title": "走出成败的循环",
+    "lifelong_text": "如何让有着不同性格和成败经历的人，尽可能不必依赖过人的毅力与耐力，也能保持面对现实、采取成功者会做出的行动，并逐渐改善生活的能力？",
+    "lifelong_link": "阅读完整思考",
+    "path": "/zh/lifelong-question/",
+    "back": "返回研究兴趣",
+    "title": "走出成败的循环",
+    "paragraphs": [
+      "做科研让我反复感受到，努力与结果之间可能隔着很长时间。许多尝试没有得到预期的结果，时间久了，连继续尝试的信心也会受到影响。我开始想：为什么有些人越来越成功，而另一些人却在一次次受挫后，逐渐失去了改变处境的力量？",
+      "最初的启发来自 Zhou 等人发表于 <em>Science</em> 的论文：<a href=\"https://doi.org/10.1126/science.aak9726\" aria-describedby=\"paper-reference\">History of winning remodels thalamo-PFC circuit to reinforce social dominance</a>（2017）。在实验条件下，多次获胜会增强小鼠特定脑回路的连接，使它们在之后的竞争中更容易保持优势。通俗地说，获胜的经历会留在大脑里，影响下一次竞争时的表现。",
+      "这让我想到人的处境。如果建立“我能做到”的信心需要多次成功，而少数几次重大失败就可能使它瓦解，那么可以推论：这种不对称会让人更容易陷入失败循环，而更难建立并维持成功循环。这是我从研究中得到的启发，也是需要在人类情境中检验的推论。",
+      "现实中的成功还可能带来更多资源和机会，让之后的成功更容易。那些尚未获得这些积累的人，却可能在长期等待结果的过程中耗尽信心。我们常把坚持下来的原因归于毅力，但每个人的承受力都有边界。即使一个人曾经坚韧、成功，也可能被后来的挫折击垮。我不甘心把解决办法只寄托在“变得更坚强”上。",
+      "纯粹的精神胜利也无法解决这个问题。阿Q可以在想象中把失败解释成胜利，暂时得到安慰，但现实中的处境并没有因此改善。如果这种解释让人回避问题、忽略反馈，它还可能使改变更难发生。自我安慰可以帮助人缓一口气，却不能替代解决问题所需要的判断和行动。",
+      "我想用一生寻找一种更本质、更基础的方法：让有着不同性格和成败经历的人，尽可能不必依赖过人的毅力与耐力，也能保持面对现实、采取成功者会做出的行动，并逐渐改善生活的能力。",
+      "AI 正在改变工作，也可能动摇许多人赖以获得收入、社会认可和身份感的方式。当一个人长期积累的技能不再被需要时，他该如何理解自己的价值，又如何找到继续行动的方向？这个问题的迫切性远不止于我个人，它关乎越来越多的人，也关乎整个人类如何面对这些变化。",
+      "对我而言，这也是攻读 Doctor of Philosophy 的意义之一：认真追问一个重要的问题，不把寻找答案的方式限定在某个学科之内。我希望带着自己在人工智能、记忆与学习方面积累的知识，为它提供一个不同的视角。"
+    ],
+    "reference_label": "启发这次思考的论文",
+    "figure_alt": "Zhou 等人 2017 年论文图 4A：光刺激诱导获胜后的小鼠社会等级变化，以及不同诱导获胜次数下新等级的保持情况。",
+    "figure_caption": "第 0 天（蓝色区域），研究者通过光刺激帮助小鼠获胜。左图：横轴是天数，纵轴是比原来提升的名次；停止刺激后，红色组保持优势，橙色组回到原排名。右图：获胜 2–5 次的小鼠中，4/13 只保持新排名；获胜 6–20 次的 11 只全部保持。n 和柱内数字表示小鼠数量，*** 表示两组差异显著（p < 0.001）。",
+    "figure_zoom": "放大查看原图 4A"
+  },
+  "en": {
+    "technical_label": "Technical question",
+    "technical_title": "<span>Memory modeling</span> <span>for physical AI</span>",
+    "technical_text": "I’m interested in what an agent should retain from past observations, how that information should be updated as the environment changes, and how it can help with later predictions and decisions.",
+    "technical_link": "Research and publications",
+    "lifelong_label": "Societal question",
+    "lifelong_title": "Beyond the cycle of success and failure",
+    "lifelong_text": "How can people with different personalities and histories of success and failure sustain the ability to face reality, take the actions a successful person would take, and improve their lives, without depending on exceptional willpower or endurance?",
+    "lifelong_link": "Read the full reflection",
+    "path": "/lifelong-question/",
+    "back": "Back to research interests",
+    "title": "Beyond the cycle of success and failure",
+    "paragraphs": [
+      "Research has repeatedly shown me how far effort can be from a clear result. Many attempts do not work out as expected. Over time, even the confidence to try again can suffer. I began to wonder: why do some people become increasingly successful, while others gradually lose the ability to change their circumstances after repeated setbacks?",
+      "An early inspiration was a paper by Zhou and colleagues in <em>Science</em>: <a href=\"https://doi.org/10.1126/science.aak9726\" aria-describedby=\"paper-reference\">History of winning remodels thalamo-PFC circuit to reinforce social dominance</a> (2017). Under experimental conditions, repeated wins strengthened connections in a particular brain circuit in mice, helping them maintain an advantage in later contests. Put simply, winning left a trace in the brain that affected how they competed next.",
+      "This made me think about human experience. If building the confidence that “I can do this” takes repeated successes, while a few major failures can undo it, then this asymmetry would make cycles of failure easier to enter and cycles of success harder to establish and sustain. This is an inference that the research prompted me to consider, and one that needs to be tested in human settings.",
+      "Success can also bring resources and opportunities that make further success easier. Those who have not yet accumulated these advantages may lose confidence while waiting for their efforts to bear fruit. We often attribute persistence to willpower, but everyone has limits. Even someone who has been resilient and successful can be overwhelmed by later setbacks. I do not want “become tougher” to be the only answer.",
+      "A purely imagined victory cannot solve this problem either. In Lu Xun’s The True Story of Ah Q, Ah Q can recast defeat as victory in his mind and find temporary comfort, while his actual circumstances remain unchanged. If that explanation encourages avoidance or disregard for feedback, change may become harder. Comfort can offer a moment to recover; it cannot replace the judgment and action needed to address a problem.",
+      "I want to spend my life looking for a more fundamental approach: one that helps people with different personalities and histories of success and failure sustain the ability to face reality, take the actions a successful person would take, and gradually improve their lives, with as little dependence as possible on exceptional willpower or endurance.",
+      "AI is changing work and may unsettle the ways many people earn a living, gain recognition, and understand who they are. When skills built over many years are no longer needed, how can a person understand their own value and find a direction in which to act? The urgency of this question extends far beyond my own life. It concerns growing numbers of people, and how humanity will live through these changes.",
+      "For me, this is also part of what pursuing a Doctor of Philosophy means: taking an important question seriously without restricting the search for answers to a single discipline. I hope to bring a different perspective through what I have learned about artificial intelligence, memory, and learning."
+    ],
+    "reference_label": "The paper that prompted this reflection",
+    "figure_alt": "Figure 4A from Zhou et al. (2017): mouse rank changes after photostimulated wins, and rank maintenance after different numbers of induced wins.",
+    "figure_caption": "On day 0 (blue band), photostimulation helped mice win. Left: days on the horizontal axis; places gained relative to the original rank on the vertical axis. After stimulation stopped, the red group retained its advantage; the orange group returned to its original rank. Right: 4 of 13 mice retained their new rank after 2–5 wins, compared with all 11 after 6–20 wins. The n labels and numbers inside the bars count mice; *** indicates a significant difference (p < 0.001).",
+    "figure_zoom": "Enlarge original Figure 4A"
+  }
+}

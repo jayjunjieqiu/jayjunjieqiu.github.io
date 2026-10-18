@@ -1,9 +1,26 @@
 (() => {
   const languageSwitch = document.querySelector('[data-language-switch]');
   if (languageSwitch) {
-    const syncLanguageLink = () => { languageSwitch.hash = window.location.hash; };
+    const syncLanguageLink = () => {
+      languageSwitch.hash = window.location.hash;
+      languageSwitch.search = window.location.search;
+      const destination = new URL(languageSwitch.href);
+      destination.searchParams.set('lang', languageSwitch.lang.startsWith('zh') ? 'zh' : 'en');
+      languageSwitch.href = destination.href;
+    };
     syncLanguageLink();
     window.addEventListener('hashchange', syncLanguageLink);
+    languageSwitch.addEventListener('click', () => {
+      const language = languageSwitch.lang.startsWith('zh') ? 'zh' : 'en';
+      try {
+        window.localStorage.setItem('preferred-language', language);
+      } catch (_) {
+        // Keep manual switching usable when browser storage is unavailable.
+        const destination = new URL(languageSwitch.href);
+        destination.searchParams.set('lang', language);
+        languageSwitch.href = destination.href;
+      }
+    });
   }
 
   const sections = document.querySelectorAll('main > section[id]');

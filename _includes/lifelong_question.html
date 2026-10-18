@@ -1,0 +1,24 @@
+{% assign lang = page.lang | default: 'en' %}
+{% assign essay = site.data.research_areas[lang] %}
+{% assign home_path = '/' %}{% if lang == 'zh' %}{% assign home_path = '/zh/' %}{% endif %}
+<article class="lifelong-page shell">
+  <a class="essay-back" href="{{ home_path | relative_url }}#interests"><span aria-hidden="true">←</span> {{ essay.back }}</a>
+  <header class="essay-header">
+    <h1>{{ essay.title }}</h1>
+  </header>
+  <div class="essay-body">
+    {% for paragraph in essay.paragraphs %}
+    {% if forloop.index == 6 %}<p class="essay-purpose"><strong>{{ paragraph }}</strong></p>{% else %}<p>{{ paragraph }}</p>{% endif %}
+    {% if forloop.index == 2 %}
+    <figure class="essay-figure">
+      <a class="figure-zoom" href="{{ '/assets/images/research/zhou-2017-winner-effect-fig4a.webp' | relative_url }}" aria-label="{{ essay.figure_zoom }}"><img src="{{ '/assets/images/research/zhou-2017-winner-effect-fig4a.webp' | relative_url }}" alt="{{ essay.figure_alt }}" width="1020" height="684" loading="lazy"></a>
+      <figcaption>{{ essay.figure_caption }} <span class="figure-credit">Zhou et al., <em>Science</em> 357, 162–168 (2017), <a href="https://doi.org/10.1126/science.aak9726">Fig. 4A</a>. © 2017 AAAS.</span></figcaption>
+    </figure>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <aside class="essay-reference" aria-labelledby="reference-title">
+    <h2 id="reference-title">{{ essay.reference_label }}</h2>
+    <p id="paper-reference">Zhou, T., et al. (2017). <a href="https://doi.org/10.1126/science.aak9726">History of winning remodels thalamo-PFC circuit to reinforce social dominance.</a> <em>Science</em>, 357(6347), 162–168. DOI: 10.1126/science.aak9726.</p>
+  </aside>
+</article>

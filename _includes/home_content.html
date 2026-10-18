@@ -27,10 +27,24 @@
   </aside>
 </section>
 
-<section class="focus-section" aria-labelledby="focus-title">
+<section id="interests" class="focus-section" aria-labelledby="focus-title">
   <div class="shell">
     <div class="focus-heading" data-index="01"><span class="section-index" aria-hidden="true">01</span><h2 id="focus-title">{{ ui.interests }}</h2></div>
-    <p class="focus-prose">{{ home.research_interests }}</p>
+    {% assign areas = site.data.research_areas[lang] %}
+    <div class="research-areas">
+      <article class="research-area research-area--technical">
+        <p class="area-label">{{ areas.technical_label }}</p>
+        <h3>{{ areas.technical_title }}</h3>
+        <p class="area-description">{{ areas.technical_text }}</p>
+        <a class="area-link" href="#research">{{ areas.technical_link }} <span aria-hidden="true">↘</span></a>
+      </article>
+      <article class="research-area research-area--lifelong">
+        <p class="area-label">{{ areas.lifelong_label }}</p>
+        <h3>{{ areas.lifelong_title }}</h3>
+        <p class="area-description">{{ areas.lifelong_text }}</p>
+        <a class="area-link" href="{{ areas.path | relative_url }}">{{ areas.lifelong_link }} <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
   </div>
 </section>
 

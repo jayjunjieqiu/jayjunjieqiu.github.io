@@ -1,5 +1,5 @@
 {
-  "intro": "我是香港科技大学（广州）的一年级博士生，导师为 <a href=\"https://yuxuanliang.com/\">梁宇轩教授</a>，研究方向是<strong>面向物理人工智能的时序建模</strong>。",
+  "intro": "我是香港科技大学（广州）的一年级博士生，导师为 <a href=\"https://yuxuanliang.com/\">梁宇轩教授</a>，研究方向是<strong>面向物理 AI 的记忆建模</strong>。",
   "perspective": "我希望为动态环境中的智能体构建长时记忆，包括具身系统。已有工作涉及时序预训练、多模态视频生成，以及面向长篇叙事的应用层记忆。",
   "cv": "/assets/files/resume.pdf",
   "research_interests": "我关注智能体应当从过去的观测中保留什么、如何随环境变化更新这些信息，以及如何利用它们支持后续预测与决策。",

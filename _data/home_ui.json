@@ -8,7 +8,7 @@
     "interests": "Research interests",
     "publications": "Publications",
     "education": "Education",
-    "tag": "Temporal modeling / Multimodal / Physical AI",
+    "tag": "Memory modeling / Multimodal / Physical AI",
     "skip": "Skip to content",
     "back": "Back to top",
     "method": "Method & evaluation",
@@ -24,7 +24,7 @@
     "home": "Home",
     "back_home": "← Back home",
     "publication_intro": "Learning transferable temporal representations, from foundation model pretraining to efficient adaptation.",
-    "description": "Junjie Qiu — Ph.D. student at HKUST (Guangzhou), studying temporal modeling for physical AI and long-horizon memory in dynamic environments."
+    "description": "Junjie Qiu — Ph.D. student at HKUST (Guangzhou), studying memory modeling for physical AI and long-horizon memory in dynamic environments."
   },
   "zh": {
     "name": "邱俊杰",
@@ -35,7 +35,7 @@
     "interests": "研究兴趣",
     "publications": "学术论文",
     "education": "教育经历",
-    "tag": "时序建模 / 多模态 / 物理人工智能",
+    "tag": "记忆建模 / 多模态 / 物理人工智能",
     "skip": "跳转至正文",
     "back": "返回顶部",
     "method": "方法与评估",
@@ -51,6 +51,6 @@
     "home": "首页",
     "back_home": "← 返回首页",
     "publication_intro": "研究可迁移的时序表征，涵盖基础模型预训练与高效适配。",
-    "description": "邱俊杰，香港科技大学（广州）博士生，研究面向物理人工智能的时序建模，以及动态环境中的长时记忆。"
+    "description": "邱俊杰，香港科技大学（广州）博士生，研究面向物理 AI 的记忆建模，以及动态环境中的长时记忆。"
   }
 }
