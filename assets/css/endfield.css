@@ -149,3 +149,6 @@ html[lang="zh-CN"] .area-description,html[lang="zh-CN"] .essay-body{line-height:
 @media(max-width:520px){.essay-figure{padding:16px}.essay-figure figcaption{font-size:15px}}
 
 .essay-reference p + p{margin-top:14px}
+
+/* Reserve the portrait space while no profile photo is displayed. */
+.portrait-empty{width:100%;aspect-ratio:1}

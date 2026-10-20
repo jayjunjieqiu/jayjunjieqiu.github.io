@@ -12,7 +12,6 @@
   <meta property="og:title" content="{% if page.research_area %}{{ page.title | escape }} · {{ ui.name }}{% else %}{{ ui.name }} · {{ ui.tag }}{% endif %}">
   <meta property="og:description" content="{{ page.description | default: ui.description | escape }}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ '/assets/images/photos/junjie.webp' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <link rel="alternate" hreflang="en" href="{{ page.en_path | default: '/' | absolute_url }}">
   <link rel="alternate" hreflang="zh-CN" href="{{ page.zh_path | default: '/zh/' | absolute_url }}">

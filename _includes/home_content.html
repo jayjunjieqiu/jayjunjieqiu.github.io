@@ -20,10 +20,8 @@
       <a href="mailto:{{ site.data.profile.email }}">{{ ui.email }} <span aria-hidden="true">↗</span></a>
     </div>
   </div>
-  <aside class="hero-aside" aria-label="{{ ui.portrait }}">
-    <figure class="portrait">
-      <img src="{{ site.data.profile.portrait_url | relative_url }}" alt="{{ ui.portrait }}" width="400" height="400" fetchpriority="high">
-    </figure>
+  <aside class="hero-aside" aria-hidden="true">
+    <div class="portrait-empty"></div>
   </aside>
 </section>
 
