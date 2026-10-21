@@ -8,17 +8,19 @@
     <p class="research-tag">{{ ui.tag }}</p>
     <div class="intro-prose"><p>{{ home.intro }}</p><p>{{ home.perspective }}</p></div>
     <div class="profile-links" aria-label="{% if lang == 'zh' %}学术与职业主页{% else %}Academic and professional profiles{% endif %}">
-      {% if lang == 'zh' %}
-      <a class="primary-link" href="{{ '/assets/files/resume_zh.pdf' | relative_url }}" aria-label="查看中文简历（PDF）">中文简历 <span aria-hidden="true">↗</span></a>
-      <a class="cv-language" href="{{ home.cv | relative_url }}" lang="en" aria-label="查看英文简历（PDF）">CV · English <span aria-hidden="true">↗</span></a>
-      {% else %}
-      <a class="primary-link" href="{{ home.cv | relative_url }}" aria-label="View curriculum vitae (PDF)">CV · English <span aria-hidden="true">↗</span></a>
-      <a class="cv-language" href="{{ '/assets/files/resume_zh.pdf' | relative_url }}" lang="zh-CN" aria-label="View Chinese curriculum vitae (PDF)">中文简历 <span aria-hidden="true">↗</span></a>
-      {% endif %}
+      <a class="primary-link" href="https://blog.junjieqiu.com/{% if lang == 'zh' %}zh{% else %}en{% endif %}/">{% if lang == 'zh' %}博客{% else %}Blog{% endif %} <span aria-hidden="true">↗</span></a>
+      <button class="cv-trigger" type="button" aria-haspopup="dialog" aria-controls="cv-dialog">{% if lang == 'zh' %}简历{% else %}CV{% endif %} <span aria-hidden="true">↗</span></button>
       <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">{{ ui.scholar }} <span aria-hidden="true">↗</span></a>
       <a href="https://github.com/{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a>
       <a href="mailto:{{ site.data.profile.email }}">{{ ui.email }} <span aria-hidden="true">↗</span></a>
     </div>
+    <dialog class="cv-dialog" id="cv-dialog" aria-labelledby="cv-dialog-title">
+      <div class="cv-dialog-heading"><h2 id="cv-dialog-title">{% if lang == 'zh' %}选择简历语言{% else %}Choose CV language{% endif %}</h2><button type="button" class="cv-close" aria-label="{% if lang == 'zh' %}关闭{% else %}Close{% endif %}">×</button></div>
+      <div class="cv-options">
+        <a href="{{ '/assets/files/resume.pdf' | relative_url }}" lang="en">English <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/assets/files/resume_zh.pdf' | relative_url }}" lang="zh-CN">中文 <span aria-hidden="true">↗</span></a>
+      </div>
+    </dialog>
   </div>
   <aside class="hero-aside" aria-hidden="true">
     <div class="portrait-empty"></div>

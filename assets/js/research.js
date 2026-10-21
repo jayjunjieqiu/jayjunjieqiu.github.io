@@ -1,4 +1,16 @@
 (() => {
+  const cvDialog = document.querySelector('.cv-dialog');
+  const cvTrigger = document.querySelector('.cv-trigger');
+  if (cvDialog && cvTrigger) {
+    cvTrigger.addEventListener('click', () => cvDialog.showModal());
+    cvDialog.querySelector('.cv-close').addEventListener('click', () => cvDialog.close());
+    cvDialog.addEventListener('click', event => {
+      if (event.target !== cvDialog) return;
+      const box = cvDialog.getBoundingClientRect();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) cvDialog.close();
+    });
+    cvDialog.addEventListener('close', () => cvTrigger.focus({ preventScroll: true }));
+  }
   const languageSwitch = document.querySelector('[data-language-switch]');
   if (languageSwitch) {
     const syncLanguageLink = () => {
