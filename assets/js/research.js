@@ -58,6 +58,20 @@
   if (!dialog || typeof dialog.showModal !== 'function') return;
   const enlargedImage = dialog.querySelector('.figure-full');
   let trigger = null;
+  let zoom = 1;
+  const canvas = dialog.querySelector('.figure-canvas');
+  const fit = () => {
+    const ratio = enlargedImage.naturalWidth / enlargedImage.naturalHeight || 1;
+    const availableHeight = Math.max(200, window.innerHeight * .9 - 90);
+    enlargedImage.style.width = Math.round(Math.min(canvas.clientWidth, availableHeight * ratio) * zoom) + 'px';
+  };
+  enlargedImage.addEventListener('load', fit);
+  window.addEventListener('resize', () => { if (dialog.open) fit(); });
+  dialog.querySelectorAll('[data-figure-zoom]').forEach(button => button.addEventListener('click', () => {
+    const action = button.dataset.figureZoom;
+    zoom = action === 'fit' ? 1 : Math.max(.5, Math.min(4, zoom * (action === 'in' ? 1.4 : 1 / 1.4)));
+    fit();
+  }));
 
   document.querySelectorAll('.figure-zoom').forEach(link => {
     link.setAttribute('aria-haspopup', 'dialog');
@@ -66,10 +80,13 @@
       event.preventDefault();
       trigger = link;
       const image = link.querySelector('img');
+      zoom = 1;
       enlargedImage.src = link.href;
       enlargedImage.alt = image.alt;
       dialog.setAttribute('aria-label', image.alt);
       dialog.showModal();
+      fit();
+      canvas.scrollTo(0, 0);
       document.documentElement.classList.add('figure-open');
     });
   });

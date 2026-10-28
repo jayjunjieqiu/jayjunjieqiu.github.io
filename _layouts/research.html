@@ -43,7 +43,8 @@
   <main id="main">{{ content }}</main>
   <dialog class="figure-dialog" aria-label="{{ ui.figure }}">
     <button class="figure-close" type="button" aria-label="{{ ui.close }}" autofocus>×</button>
-    <img class="figure-full" alt="">
+    <div class="figure-tools"><button type="button" data-figure-zoom="out" aria-label="{% if lang == 'zh' %}缩小{% else %}Zoom out{% endif %}">−</button><button type="button" data-figure-zoom="fit">{% if lang == 'zh' %}适应窗口{% else %}Fit to window{% endif %}</button><button type="button" data-figure-zoom="in" aria-label="{% if lang == 'zh' %}放大{% else %}Zoom in{% endif %}">+</button></div>
+    <div class="figure-canvas"><img class="figure-full" alt=""></div>
   </dialog>
   <footer class="site-footer shell">
     <span>© {{ 'now' | date: '%Y' }} Junjie Qiu</span>
