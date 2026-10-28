@@ -25,6 +25,8 @@
   <script src="{{ '/assets/js/research.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
   <meta name="msvalidate.01" content="3B8BC6BB01CC31DA3188D347D750F1B5">
   <meta name="google-site-verification" content="mwdDGYvXUC-PCWqq4YLkVUX1eq1iZNKIQblG7lFVSS8">
+  <link rel="stylesheet" href="{{ '/assets/css/image-viewer.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <script src="{{ '/assets/js/image-viewer.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">{{ ui.skip }}</a>
@@ -41,11 +43,7 @@
     </div>
   </header>
   <main id="main">{{ content }}</main>
-  <dialog class="figure-dialog" aria-label="{{ ui.figure }}">
-    <button class="figure-close" type="button" aria-label="{{ ui.close }}" autofocus>×</button>
-    <div class="figure-tools"><button type="button" data-figure-zoom="out" aria-label="{% if lang == 'zh' %}缩小{% else %}Zoom out{% endif %}">−</button><button type="button" data-figure-zoom="fit">{% if lang == 'zh' %}适应窗口{% else %}Fit to window{% endif %}</button><button type="button" data-figure-zoom="in" aria-label="{% if lang == 'zh' %}放大{% else %}Zoom in{% endif %}">+</button></div>
-    <div class="figure-canvas"><img class="figure-full" alt=""></div>
-  </dialog>
+
   <footer class="site-footer shell">
     <span>© {{ 'now' | date: '%Y' }} Junjie Qiu</span>
     <a href="#main">{{ ui.back }}<span aria-hidden="true">↑</span></a>
