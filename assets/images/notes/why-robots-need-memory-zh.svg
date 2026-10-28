@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450" role="img" aria-labelledby="title desc">
+<title id="title">记忆改变下一步行动</title><desc id="desc">Two histories lead to different actions despite the same view of a closed drawer. If a cup was stored, open the drawer; if it was removed, search elsewhere.</desc>
+<defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 8 4 0 8" fill="#777"/></marker><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#e7e7e2" stroke-width=".6"/></pattern><g id="cup"><path d="M0 0h27v28q0 6-6 6H6q-6 0-6-6Z" fill="#fff500" stroke="#111" stroke-width="2"/><path d="M27 5h6q12 0 12 10t-12 10h-6" fill="none" stroke="#111" stroke-width="2"/></g></defs>
+<rect width="720" height="450" fill="#fcfbf9"/><rect x="280" y="140" width="230" height="255" fill="url(#grid)"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#111">
+<path d="M30 31h30" stroke="#111" stroke-width="3"/><text x="72" y="35" font-size="11" letter-spacing="2" fill="#64686a">学习笔记 / 具身智能</text><text x="30" y="83" font-size="31" font-weight="800" letter-spacing="-1">同样的画面，</text><text x="30" y="121" font-size="31" font-weight="800" letter-spacing="-1">不同的下一步。</text><path d="M30 143H690" stroke="#d5d7d3"/>
+<text x="30" y="174" font-size="10" letter-spacing="1.5" fill="#777">发生过什么</text><text x="299" y="174" font-size="10" letter-spacing="1.5" fill="#777">现在看见什么</text><text x="543" y="174" font-size="10" letter-spacing="1.5" fill="#777">下一步做什么</text>
+<!-- Two histories, kept separate. -->
+<rect x="30" y="192" width="203" height="84" fill="#fff" stroke="#c9ccc6"/><path d="M30 192v84" stroke="#111" stroke-width="3"/>
+<g transform="translate(51 211) scale(.83)"><use href="#cup"/></g><text x="107" y="226" font-size="16" font-weight="700">杯子已放入</text><text x="107" y="248" font-size="12" fill="#707477">记住位置。</text>
+<rect x="30" y="296" width="203" height="84" fill="#fff" stroke="#c9ccc6"/><path d="M30 296v84" stroke="#999" stroke-width="3"/>
+<g transform="translate(51 316) scale(.83)"><use href="#cup"/><path d="M-4 39 43-4" stroke="#fcfbf9" stroke-width="7"/><path d="M-4 39 43-4" stroke="#111" stroke-width="2"/></g><text x="107" y="330" font-size="16" font-weight="700">杯子已被拿走</text><text x="107" y="352" font-size="12" fill="#707477">更新判断。</text>
+<!-- The observation is identical in both histories. -->
+<path d="M233 234h37l31 28M233 338h37l31-28" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M319 235 402 218 471 247v111l-84 19-68-29Z" fill="#e9e9e3" stroke="#111" stroke-width="2"/>
+<path d="M319 235 387 264l84-17M387 264v113M319 290l68 29 84-18" fill="none" stroke="#111" stroke-width="2"/>
+<path d="m410 280 29-7m-29 62 29-7" stroke="#111" stroke-width="3"/>
+<rect x="332" y="391" width="142" height="22" fill="#eaeae5"/><text x="403" y="406" text-anchor="middle" font-size="11" fill="#505558">同一个关闭的抽屉</text>
+<!-- Decisions depend on history, not the current image alone. -->
+<path d="M475 269h25v-35h37M475 311h25v27h37" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="543" y="209" width="147" height="52" fill="#fff500"/><text x="616" y="240" text-anchor="middle" font-size="16" font-weight="700">打开抽屉</text>
+<rect x="543" y="313" width="147" height="52" fill="#111"/><text x="616" y="344" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">去别处寻找</text>
+<text x="30" y="425" font-size="10" letter-spacing="1.5" fill="#777">历史 → 判断 → 行动</text><path d="M645 420h45" stroke="#111" stroke-width="2"/>
+</g></svg>
