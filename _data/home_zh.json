@@ -8,7 +8,7 @@
       "organisation": "ByFusion · LuckyShort",
       "logo": "/assets/images/badges/LuckyShort.webp",
       "logo_alt": "LuckyShort 标志",
-      "role": "架构师",
+      "role": "架构师 · AI 视频生成",
       "start": "2026.03",
       "end": "2026.09",
       "description": "负责 AI 短剧视频智能体的架构设计，串联长篇规划、叙事记忆、可控生成与视觉一致性反馈。"
@@ -17,7 +17,7 @@
       "organisation": "香港科技大学（广州）",
       "logo": "/assets/images/badges/HKUST-GZ-horizontal.webp",
       "logo_alt": "香港科技大学（广州）标志",
-      "role": "研究助理",
+      "role": "研究助理 · 时序建模",
       "start": "2025.08",
       "end": "2026.08",
       "description": "设计并预训练面向跨领域预测的时序模型，支持可变长度上下文、分位数预测与高效下游适配。"
@@ -26,7 +26,7 @@
       "organisation": "华为 · 2012 实验室",
       "logo": "/assets/images/badges/Huawei-horizontal.webp",
       "logo_alt": "华为标志",
-      "role": "研究实习生",
+      "role": "研究实习生 · 时序建模",
       "start": "2025.03",
       "end": "2025.12",
       "description": "完成预训练时序模型在昇腾平台上的适配，并在通信与电力预测数据集上复现基线、评估模型表现。"

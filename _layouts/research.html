@@ -1,4 +1,5 @@
 {% assign lang = page.lang | default: 'en' %}{% assign ui = site.data.home_ui[lang] %}{% assign home_path = '/' %}{% assign alternate_path = '/zh/' %}{% if lang == 'zh' %}{% assign home_path = '/zh/' %}{% assign alternate_path = '/' %}{% endif %}
+{% if lang == 'zh' and page.en_path %}{% assign alternate_path = page.en_path %}{% elsif lang == 'en' and page.zh_path %}{% assign alternate_path = page.zh_path %}{% endif %}
 {% if page.alternate_path %}{% assign alternate_path = page.alternate_path %}{% endif %}
 <!doctype html>
 <html lang="{% if lang == 'zh' %}zh-CN{% else %}en{% endif %}">
@@ -32,9 +33,9 @@
       <a class="wordmark" href="{{ home_path | relative_url }}" aria-label="{{ ui.name }} · {{ ui.home }}"><img src="{{ "/assets/endfield/geometric-mark.svg" | relative_url }}" alt="" aria-hidden="true" width="28" height="31"></a>
       <nav aria-label="{% if lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
         <a href="{{ home_path | relative_url }}#about" data-section="about">{{ ui.about }}</a>
-        <a href="{{ home_path | relative_url }}#research" data-section="research" {% if page.navbar_title == 'Publications' or page.research_area %}aria-current="page"{% endif %}>{{ ui.research }}</a>
+        <a href="{{ home_path | relative_url }}#projects" data-section="projects" {% if page.navbar_title == 'Publications' or page.research_area %}aria-current="page"{% endif %}>{% if lang == 'zh' %}作品{% else %}Work{% endif %}</a>
         <a href="{{ home_path | relative_url }}#experience" data-section="experience">{{ ui.experience }}</a>
-      <a href="{{ home_path | relative_url }}#projects" data-section="projects">{{ ui.projects }}</a>
+      <a href="{{ home_path | relative_url }}#research" data-section="research">{{ ui.publications }}</a>
         <a class="language-switch" data-language-switch href="{{ alternate_path | relative_url }}?lang={% if lang == 'zh' %}en{% else %}zh{% endif %}" lang="{% if lang == 'zh' %}en{% else %}zh-CN{% endif %}" hreflang="{% if lang == 'zh' %}en{% else %}zh-CN{% endif %}" aria-label="{% if lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">{% if lang == 'zh' %}EN{% else %}中文{% endif %}</a>
       </nav>
     </div>
