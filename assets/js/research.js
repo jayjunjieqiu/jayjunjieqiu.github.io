@@ -63,7 +63,8 @@
   const fit = () => {
     const ratio = enlargedImage.naturalWidth / enlargedImage.naturalHeight || 1;
     const availableHeight = Math.max(200, window.innerHeight * .9 - 90);
-    enlargedImage.style.width = Math.round(Math.min(canvas.clientWidth, availableHeight * ratio) * zoom) + 'px';
+    const baseWidth = ratio >= 1 ? canvas.clientWidth : Math.min(canvas.clientWidth, availableHeight * ratio);
+    enlargedImage.style.width = Math.round(baseWidth * zoom) + 'px';
   };
   enlargedImage.addEventListener('load', fit);
   window.addEventListener('resize', () => { if (dialog.open) fit(); });
