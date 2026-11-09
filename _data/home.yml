@@ -1,17 +1,15 @@
 intro: >-
   I’m a first-year Ph.D. student at HKUST (Guangzhou), advised by
   <a href="https://yuxuanliang.com/">Prof. Yuxuan Liang</a>.
-  I study <strong>memory modeling for physical AI</strong>.
+  I study <strong>information for intelligent action</strong>.
 perspective: >-
-  I’m interested in how past experiences shape an agent’s future behavior and
-  decisions through memory, and how we can shape that influence. My work spans
-  temporal pretraining, multimodal video generation, and memory mechanisms for
-  long-form storytelling.
+  I study how intelligent systems learn, retain, and use information from
+  observations and experience to understand changing environments and guide
+  action. My work draws on sequence modeling, memory, and multimodal learning.
 cv: "/assets/files/resume.pdf"
 
 research_interests: >-
-  I study how past experiences shape an agent’s future behavior and decisions
-  through memory, and how we can shape that influence.
+  Learning what matters for intelligent action.
 
 experience:
   - organisation: ByFusion · LuckyShort
@@ -20,14 +18,14 @@ experience:
     role: Architect · AI Video Generation
     start: Mar. 2026
     end: Sep. 2026
-    description: Led video-agent architecture for AI short-drama production, connecting long-form planning, narrative memory, controllable generation, and feedback on visual consistency.
+    description: Led video-agent architecture for AI short-drama production, using narrative memory, shared references, and review feedback to guide generation and preserve continuity.
   - organisation: Hong Kong University of Science and Technology (Guangzhou)
     logo: /assets/images/badges/HKUST-GZ-horizontal.webp
     logo_alt: HKUST Guangzhou logo
     role: Research Assistant · Temporal Modeling
     start: Aug. 2025
     end: Aug. 2026
-    description: Designed and pretrained temporal models for cross-domain forecasting, with variable-length context, quantile prediction, and efficient downstream adaptation.
+    description: Designed and pretrained temporal models for cross-domain forecasting, learning transferable representations from variable-length history for probabilistic forecasting.
   - organisation: Huawei · 2012 Laboratories
     logo: /assets/images/badges/Huawei-horizontal.webp
     logo_alt: Huawei logo

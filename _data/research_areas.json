@@ -1,8 +1,8 @@
 {
   "zh": {
     "technical_label": "技术问题",
-    "technical_title": "<span>面向物理 AI 的</span><span>记忆建模</span>",
-    "technical_text": "我关注过去的经历如何通过记忆影响智能体未来的行为与决策，以及我们如何塑造这种影响。",
+    "technical_title": "智能行动中的信息建模",
+    "technical_text": "学习对智能行动重要的信息。",
     "technical_link": "相关研究与论文",
     "lifelong_label": "社会问题",
     "lifelong_title": "走出成败的循环",
@@ -33,8 +33,8 @@
   },
   "en": {
     "technical_label": "Technical question",
-    "technical_title": "<span>Memory modeling</span> <span>for physical AI</span>",
-    "technical_text": "I study how past experiences shape an agent’s future behavior and decisions through memory, and how we can shape that influence.",
+    "technical_title": "Information for Intelligent Action",
+    "technical_text": "Learning what matters for intelligent action.",
     "technical_link": "Research and publications",
     "lifelong_label": "Societal question",
     "lifelong_title": "Beyond the cycle of success and failure",
