@@ -9,7 +9,7 @@
     <p class="research-tag">{{ ui.tag }}</p>
     <div class="intro-prose"><p>{{ home.intro }}</p><p>{{ home.perspective }}</p></div>
     <div class="profile-links" aria-label="{% if lang == 'zh' %}学术与职业主页{% else %}Academic and professional profiles{% endif %}">
-      <a class="primary-link" href="https://blog.junjieqiu.com/{% if lang == 'zh' %}zh{% else %}en{% endif %}/">{% if lang == 'zh' %}博客{% else %}Blog{% endif %} <span aria-hidden="true">↗</span></a>
+      <a class="primary-link" href="https://blog.junjieqiu.com/en/">{% if lang == 'zh' %}博客{% else %}Blog{% endif %} <span aria-hidden="true">↗</span></a>
       <button class="cv-trigger" type="button" aria-haspopup="dialog" aria-controls="cv-dialog">{% if lang == 'zh' %}简历{% else %}CV{% endif %} <span aria-hidden="true">↗</span></button>
       <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">{{ ui.scholar }} <span aria-hidden="true">↗</span></a>
       <a href="https://github.com/{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a>
